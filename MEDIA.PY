@@ -10,3 +10,9 @@ media = (nota1 + nota2 + nota3) / 3
 
 # Exibe o resultado
 print(f"A média das notas é: {media:.2f}")
+
+# Verifica se o aluno foi aprovado ou reprovado
+if media >= 6:
+    print("Aprovado")
+else:
+    print("Reprovado")
