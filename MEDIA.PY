@@ -5,11 +5,16 @@ nota1 = float(input("Digite a primeira nota: "))
 nota2 = float(input("Digite a segunda nota: "))
 nota3 = float(input("Digite a terceira nota: "))
 
-# Calcula a média
-media = (nota1 + nota2 + nota3) / 3
+# Definindo os pesos
+peso1 = 1
+peso2 = 1
+peso3 = 2
+
+# Calcula a média ponderada
+media = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3)
 
 # Exibe o resultado
-print(f"A média das notas é: {media:.2f}")
+print(f"A média ponderada das notas é: {media:.2f}")
 
 # Verifica se o aluno foi aprovado, reprovado ou está de recuperação
 if media >= 6:
